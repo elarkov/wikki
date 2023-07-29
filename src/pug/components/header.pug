@@ -1,0 +1,24 @@
+mixin header()
+
+  //--overlay
+  .overlay(data-overlay)
+
+  //--modal
+  .modal(data-modal)  
+    .modal-close-overlay(data-modal-overlay)
+    .modal-content
+      button.modal-close-btn(data-modal-close)
+        ion-icon(name="close-outline")
+
+      .newsletter-img
+        img(src="img/newsletter.png", alt="" width="400" height="400")
+
+      .newsletter 
+        form(action="#")
+          .newsletter-header 
+            h3.newsletter-title Подпишитесь на обновления
+            .newsletter-desc <b>Евгений</b>, подписывайся на новые товары и скидки
+            input(type="email" name="email" class="email-field" placeholder="Email" required)
+            button(class="btn-newsletter" type="submit") Подписаться 
+  //--HEADER
+  header 

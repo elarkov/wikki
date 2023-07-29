@@ -1,0 +1,69 @@
+// Тема по умолчанию
+html,
+body{
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 320px;
+  font-family: $default-font;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  background: #fff;
+  color: #23262F;
+}
+
+.container {
+  @include wrapper();
+}
+
+/**
+* Scroll bar style
+**/
+body::-webkit-scrollbar { width: 15px; }
+body::-webkit-scrollbar-track { 
+  background: $white; 
+  border-left: 1px solid $cultured;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+  border: 3px solid $white;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 70%);
+}
+
+.has-scrollbar {
+  padding-bottom: 5px;
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 3px solid $white;
+    border-radius: 20px;
+    &:hover {
+      background: hsl(0, 0%, 80%);
+    }
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: hsl(0, 0%, 90%);
+    }
+  }
+}
+
+.title {
+  font-family: $default-font;
+  font-size: 28px;
+
+}
