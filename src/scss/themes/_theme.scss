@@ -26,44 +26,33 @@ body {
 /**
 * Scroll bar style
 **/
-body::-webkit-scrollbar { width: 15px; }
-body::-webkit-scrollbar-track { 
-  background: $white; 
-  border-left: 1px solid $cultured;
-}
+// body::-webkit-scrollbar { width: 15px; }
+// body::-webkit-scrollbar-track { 
+//   background: #fff; 
+//   border-left: 1px solid hsl(0, 0%, 93%);
+// }
 
-body::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 80%);
-  border: 3px solid $white;
-  border-radius: 10px;
-}
-body::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 0%, 70%);
-}
+// body::-webkit-scrollbar-thumb {
+//   background: hsl(0, 0%, 80%);
+//   border: 3px solid #fff;
+//   border-radius: 10px;
+// }
+// body::-webkit-scrollbar-thumb:hover {
+//   background: hsl(0, 0%, 70%);
+// }
 
-.has-scrollbar {
-  padding-bottom: 5px;
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: 3px solid $white;
-    border-radius: 20px;
-    &:hover {
-      background: hsl(0, 0%, 80%);
-    }
-  }
-  &:hover {
-    &::-webkit-scrollbar-thumb {
-      background: hsl(0, 0%, 90%);
-    }
-  }
-}
+
 
 .title {
   font-family: $default-font;
   font-size: 28px;
+  line-height: 140%;
+}
 
+.button {
+  border-radius: 18px;
+  background: hsla(43, 100%, 68%, 1);
+  text-align: center;
+  font-weight: 700;
+  color: hsla(222, 15%, 16%, 1);
 }

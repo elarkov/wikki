@@ -1,0 +1,46 @@
+.platform {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  &__title {
+    margin-bottom: 40px;
+    @include sm-block {
+      text-align: center;
+    }
+    @include md-block {
+      font-size: 40px; 
+    }
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include sm-block {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &__item {
+      display: flex;
+      padding: 40px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      align-self: stretch; 
+      background: #F4F5F6;
+      border-radius: 20px;
+      @include sm-block {
+        @include size(6);
+      }
+      p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        @include xl-block {
+          width: 445px;
+        }
+      }
+    }
+  }
+}

@@ -6,4 +6,160 @@ block mainVariables
 //- MAIN
 block mainContent
   main.main
-    
+    section.cases 
+      .container 
+        ul.cases-list 
+          li.cases-list__item 
+            .cases-list__img 
+              +icon('widgets','icon-list', '48', '48')
+            .cases-list__text Мобильное приложение без привлечения разработчиков
+          li.cases-list__item 
+            .cases-list__img 
+              +icon('star','icon-list', '48', '48')
+            .cases-list__text Собственная программа лояльности с помощью системы Бонусных баллов
+          li.cases-list__item 
+            .cases-list__img 
+              +icon('setting','icon-list', '48', '48')
+            .cases-list__text Автоматизируйте рутинные процессы и минимизируйте человеческий фактор
+          li.cases-list__item 
+            .cases-list__img 
+              +icon('medal','icon-list', '48', '48')
+            .cases-list__text Будь первым в своём городе
+    section.office 
+      .container 
+        h2.title.office__title Расширенный личный кабинет покупателя
+        p.office__subtitle Вся информация о заказах в одном месте
+        ul.box-list 
+          li.box-list__item 
+            .box-list__img.box-list__img--flex  
+              picture 
+                source(srcset="img/img-1-sm.png" media="(max-width: 576px)" width="330" height="320")
+                img(src="img/img-1-lg.png", alt="" width="540" height="530")
+            .box-description
+              .box-number 01.
+              .description-list 
+                p Уменьшите дебиторскую задолженность в 2 раза и перестаньте пинать клиентов
+                p Принимайте оплату 24/7. Дилеры сами могут посмотреть задолженности и совершить оплату в любое время суток
+                p История заказов с детальным описанием, даже с теми что созданы в офлайне
+                p Актуальные статусы заказов
+                p История начисления и списания бонусов
+                p История операций — расходы, начисления
+                p Видеть текущую задолженность или переплату
+                p Вносить изменения в адрес монтажа
+          li.box-list__item 
+            .box-list__img 
+              picture 
+                source(srcset="img/img-2-sm.png" media="(max-width: 576px)" width="330" height="320")
+                img(src="img/img-2-lg.png", alt="" width="540" height="530")
+            .box-description 
+              .box-number 02.
+              .description-list 
+                p Можно открыть заказ и увидеть детали заказа, товары, потолки с чертежами, увеличить картинки, и даже оплатить заказ в любом статусе
+                p Оплата подгружается автоматически в 1С и привязывается к заказу без участия менеджера
+                p История платежей. Все оплаты, включая оплаченные в офисе, переводы на карту, наличные и т.д с распределением платежа на несколько заказов видно в личном кабинете дилера
+    section.office.office--items 
+      .container 
+        h2.title.office__title.office__title--2 Расширенная 2-х сторонняя интеграция с 1С
+        p.office__subtitle Посекундный IP обмен с 1С
+        ul.box-list 
+          li.box-list__item 
+            .box-list__img
+              picture 
+                source(srcset="img/img-3-sm.png" media="(max-width: 576px)" width="330" height="320")
+                img(src="img/img-3-lg.png", alt="" width="540" height="530")
+            .box-description
+              .box-number 01.
+              .description-list.description-list--items 
+                h2 Выгрузки из 1С в приложения
+                ul 
+                  li Товары (цена, кол-во, код)
+                  li Заказы (номенклатура, цена, чертежи потолка)
+                  li Оплаты по заказам
+                  li История оплаты с разбивкой по заказам
+                  li Общая задолженность/переплата
+                  li Адрес монтажа
+                  li Статусы заказов
+          li.box-list__item 
+            .box-list__img 
+              picture 
+                source(srcset="img/img-4-sm.png" media="(max-width: 576px)" width="330" height="320")
+                img(src="img/img-4-lg.png", alt="" width="540" height="530")
+            .box-description 
+              .box-number 02.
+              .description-list.description-list--items 
+                h2 Выгрузки из приложения в 1С
+                ul 
+                  li Заказы
+                  li Скидка на заказ если (Использованные баллы)
+                  li Оплата по заказу (в 1С автоматически создаётся платёж и привязывается к заказу)
+                p <b>Дилер видит всю историю заказов</b>
+                p <b>Заказ принятый менеджером за секунду появляется в личном кабинете</b>
+                p <b>Видит сумму заказа, какие заказы оплачены а какие нет, общую задолженности или переплату</b>
+                p <b>Общее кол-во баллов и историю начисления и списания баллов по заказам</b>
+                p <b>Написать комментарий, менять адрес монтажа в любом статусе заказа</b>
+    section.platform 
+      .container 
+        h2.title.platform__title Собственная платформа + мобильное приложение увеличит объём продаж в 2 раза
+        ul.platform-list
+          li.platform-list__item 
+            .platform-img 
+              +icon('people', 'icon-globe', '54', '54') 
+            p Не придётся увеличивать штат, чтобы больше продавать
+          li.platform-list__item 
+            .platform-img 
+              +icon('globe', 'icon-globe', '54', '54') 
+            p Масштабируйте свой бизнес и начните продавать по всей России
+          li.platform-list__item 
+            .platform-img 
+              +icon('donate', 'icon-globe', '54', '54') 
+            p Увеличьте показатель удерживаемости клиентов, наращивая LTV и повторные продажи
+          li.platform-list__item 
+            .platform-img 
+              +icon('like', 'icon-globe', '54', '54') 
+            p Повысьте лояльность клиентов и улучшите сервис за счёт современного интернет-магазина
+    section.dark 
+      .container 
+        h2.title.dark__title <span>Wikki</span> - это автоматизация рутинных процессов и минимизация человеческого фактора
+        p.dark__subtitle Разгрузите объём работы менеджеров на 50%, чтобы они только строили потолки
+        ul.dark-list 
+          li.dark-list__item 
+            .box-number 01.
+            p Дилеры сами будут в личном кабинете оформлять заказы на комплектующие
+          li.dark-list__item 
+            .box-number 02.
+            p Дилеры будут видеть загруженные потолки менеджерам
+          li.dark-list__item 
+            .box-number 03.
+            p В 2 раза ускорите обслуживание клиентов не увеличивая штат
+          li.dark-list__item 
+            .box-number 04.
+            p Исключите ошибки менеджеров при оформлении заказа
+    section.company 
+      .container 
+        .box-sponsors
+          .box-sponsors__item
+            h2.title.box-sponsors__title Интеграция с 50+ службами доставки
+            .spnsors
+              .sponsors__item 
+                +icon('logos', 'icon-logos')
+          .box-sponsors__item
+            h2.title.box-sponsors__title 40+ платёжных систем и сервисов уже доступны для работы
+            .spnsors
+              .sponsors__item 
+                +icon('logos', 'icon-logos')
+    section.dark.dark--white
+      .container 
+        h2.title.dark__title За вами будет закреплён персональный менеджер
+        ul.dark-list 
+          li.dark-list__item 
+            .box-number 01.
+            p Он обучает пользоваться платформой, советует улучшения, отвечает на вопросы
+          li.dark-list__item 
+            .box-number 02.
+            p А также ставит задачи техподдержке, и разработчикам
+          li.dark-list__item 
+            .box-number 03.
+            p Связаться с менеджером можно по бесплатному номеру, почте и через любой мессенджер
+          li.dark-list__item 
+            .box-number 04.
+            p Вы никогда не останетесь один на один с платформой, вам всегда помогут

@@ -4,11 +4,11 @@ export const grid = (done) => {
 	let settings = {
 		outputStyle: 'scss',
 		columns: 12,
-		offset: "10px",
+		offset: "15px",
 		mobileFirst: true,
 		container: {
-			maxWidth: "1190px",
-			fields: "10px"
+			maxWidth: "1130px",
+			fields: "15px"
 		},
 		breakPoints: {
 			xl: {

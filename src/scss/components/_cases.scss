@@ -1,0 +1,40 @@
+.cases {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #F4F5F6;
+  @include md-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    @include sm-block {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      @include sm-block {
+        @include size(6);
+      }
+      @include xl-block {
+        width: 255px;
+      }
+    }
+    &__img {
+      width: 48px;
+      height: 48px;
+    }
+    &__text {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 140%;
+      color: #23262F;
+    }
+  }
+}
