@@ -117,6 +117,26 @@ block mainContent
             .platform-img 
               +icon('like', 'icon-globe', '54', '54') 
             p Повысьте лояльность клиентов и улучшите сервис за счёт современного интернет-магазина
+    section.programma 
+      .container 
+        .programma-head 
+          h2.title.programma-head__title Собственная программа лояльности с помощью встроенной системы <span>Бонусных баллов</span>
+          p.programma-head__subtitle Приучаем посетителей делать регулярные покупки за счёт: бонусов, купонов, системы скидок
+        .programma-pic 
+          picture
+            source(srcset="img/man-2-sm.png" media="(max-width: 768px)" width="330" height="370")
+            img(src="img/man-2-xl.png", alt="" width="445" height="700")
+          ul.programm-list 
+            li.programm-list__item.yellow Создайте группу VIP-клиентов с потрясающими привилегиями
+            ul 
+              li Бесплатная доставка
+              li Товары, доступные VIP-клиентам
+              li Цены на товары для этой группы могут быть ниже
+            li.programm-list__item Поощряйте частых покупателей на основе истории их покупок
+            li.programm-list__item.yellow Неограниченное количество уровней групп
+            li.programm-list__item Индивидуальные бонусные баллы для каждого уровня группы
+
+
     section.dark 
       .container 
         h2.title.dark__title <span>Wikki</span> - это автоматизация рутинных процессов и минимизация человеческого фактора
@@ -134,19 +154,190 @@ block mainContent
           li.dark-list__item 
             .box-number 04.
             p Исключите ошибки менеджеров при оформлении заказа
+    section.programm-second 
+      .container 
+        .category Маркетинг и SEO
+        h2.title.programm-second__title 10+ функций для привлечения и удержания пользователей
+        .programm-wrapper 
+          ul.programm-list.programm-list--second 
+            li.programm-list__item.yellow Новостные рассылки и уведомления
+            ul 
+              li Встроенная возможность уведомлений через email, СМС, push, telegram bot и личный кабинет
+            li.programm-list__item Промо-акции с 17 видами условий
+            li.programm-list__item.yellow 5 видов бонусов в качестве поощрения
+            li.programm-list__item Виджеты. Встройте свой магазин куда угодно
+            li.programm-list__item.yellow Баннеры для привлечения внимания
+            li.programm-list__item Кросс-продажи, апселл
+            li.programm-list__item.yellow SEO-инструменты
+            li.programm-list__item Встроенный блог
+            li.programm-list__item.yellow Чат для обратной связи с покупателями
+            li.programm-list__item Оформления заказа в 2 клика
+          .prog-pic 
+            picture
+              source(srcset="img/banner-1-sm.png" media="(max-width: 768px)" width="330" height="440")
+              img(src="img/banner-1-lg.png", alt="" width="540" height="760")
+    section.demo 
+      .container 
+        h2.title.demo__title Получи современный, многофункциональный интернет-магазин в подарок
+        p.demo__subtitle При подключении к мобильному приложению интернет-магазин настроим и запустим бесплатно
+        .demo-info 
+          .demo-info__item
+            picture.demo-pic.demo-pic--flex
+              source(srcset="img/img-1.png" media="(max-width: 768px)" width="330" height="230")
+              img(src="img/img-1-xl.png", alt="" width="540" height="380")
+            .demo-text 
+              .box-number 01.
+              h3 Удобный современный дизайн и адаптивность для мобильных устройств
+              .demo-text__info 
+                p Все страницы сайта полностью адаптированы под различные устройства: телефон, планшет, ноутбук или персональный компьютер вашего клиента
+              a.demo-btn(href="#")
+                p Получить доступ к демо-версии
+                +icon('arrow', 'icon-arrow', '24', '24') 
+          .demo-info__item
+            picture.demo-pic
+              source(srcset="img/img-2.png" media="(max-width: 768px)" width="330" height="230")
+              img(src="img/img-2-xl.png", alt="" width="540" height="380")
+            .demo-text 
+              .box-number 02.
+              h3 Удобная панель администратора и витрина с адаптивным дизайном
+              .demo-text__info 
+                p Витрину можно настраивать под вашего клиента, гибко настраивать страницу оформления заказа и создавать красивые современные блоки для проверки идей, распродаж, товаров и анонсов
+              a.demo-btn(href="#")
+                p Получить доступ к демо-версии
+                +icon('arrow', 'icon-arrow', '24', '24')
+          .demo-info__item
+            picture.demo-pic.demo-pic--flex
+              source(srcset="img/img-3.png" media="(max-width: 768px)" width="330" height="230")
+              img(src="img/img-3-xl.png", alt="" width="540" height="380")
+            .demo-text 
+              .box-number 03.
+              h3 Фантастическая скорость работы за счёт оптимизации технической архитектуры
+              .demo-text__info 
+                p Используя самые современные технологии кэширования данных, добились идеальной производительности для вашего интернет-магазина
+              a.demo-btn(href="#")
+                p Получить доступ к демо-версии
+                +icon('arrow', 'icon-arrow', '24', '24')
+          .demo-info__item
+            picture.demo-pic
+              source(srcset="img/img-4.png" media="(max-width: 768px)" width="330" height="230")
+              img(src="img/img-4-xl.png", alt="" width="540" height="380")
+            .demo-text 
+              .box-number 04.
+              h3 Техническая поддержка 24/7.<br>Помогаем и обучаем в любое время
+              .demo-text__info 
+                ul 
+                  li Получайте экспертные консультации по телефону, почте и в мессенджерах
+                  li Обучающие статьи и видео — инструкции в личном кабинете
+                  li Не нужно нанимать разработчиков для работы с приложением
+              a.demo-btn(href="#")
+                p Получить доступ к демо-версии
+                +icon('arrow', 'icon-arrow', '24', '24')
+          .demo-info__item
+            picture.demo-pic.demo-pic--flex
+              source(srcset="img/img-5.png" media="(max-width: 768px)" width="330" height="230")
+              img(src="img/img-5-xl.png", alt="" width="540" height="380")
+            .demo-text 
+              .box-number 05.
+              h3 Вся информация что в приложении дублируется в интернет-магазине
+              .demo-text__info 
+                p Ваши дилеры могут пользоваться платформой как в приложении, так и в десктопе
+              a.demo-btn(href="#")
+                p Получить доступ к демо-версии
+                +icon('arrow', 'icon-arrow', '24', '24')
+    section.panel 
+      .container 
+        .panel-info 
+          h2.title.panel-info__title Админ панель для руководителя и менеджера. Контролируйте бизнес со смартфона из любой точки мира
+          p.panel-info__subtitle Следите за продажами, и анализируйте показатели
+        picture.panel-pic
+          source(srcset="img/man-sm.png" media="(max-width: 768px)" width="330" height="350")
+          img(src="img/man-lg.png", alt="" width="445" height="525")
+        .panel-content
+          ul.panel-list 
+            li 
+              +icon('line', 'icon-line', '24', '24')
+              div 
+                h3.title Аналитика на главной странице
+                p Последние заказы, статус заказов, этапы в воронке, последние события, текущий баланс
+            li 
+              +icon('line', 'icon-line', '24', '24')
+              div 
+                h3.title Детальная статистика продаж
+            li 
+              +icon('line', 'icon-line', '24', '24')
+              div 
+                h3.title Полная информация о каждом Заказе
+            li 
+              +icon('line', 'icon-line', '24', '24')
+              div 
+                h3.title Просмотр, добавление и редактирование товаров и категорий
+            li 
+              +icon('line', 'icon-line', '24', '24')
+              div 
+                h3.title Комментарии и отзывы покупателей
+            li 
+              +icon('line', 'icon-line', '24', '24')
+              div 
+                h3.title Публикуйте страницы, опросы
+            li 
+              +icon('line', 'icon-line', '24', '24')
+              div 
+                h3.title Сделайте Маркетплейс из своего магазина
+    section.demonstration 
+      .container 
+        .demonstration-info
+          h2.title.demonstration__title Запишитесь на бесплатную 30 минутную демонстрацию платформы в Zoom
+          ul.demonstration-list 
+            li Демонстрация Расширенного личного кабинета покупателя
+            li Программы лояльности, бонусные баллы
+            li Маркетинговый функции для привлечения и удержания пользователей
+            li Админ панель для руководителя и менеджера
+            li Встроенный редактор дизайна
+            li SEO-инструменты
+          form.form-main(action="")
+            .form-main__inputs
+              .form-main__row 
+                input(type="text" name="client" placeholder="Имя")
+              .form-main__row 
+                input(type="tel" name="phone" placeholder="+7 (___) ___-__-__") 
+            button.button.form-main__btn(type="submit") Записаться на Zoom демонстрацию
+      .demonstration-decore
+        picture 
+          source(srcset="img/computer-sm.png" media="(max-width: 768px)" width="360" height="330")
+          img(src="img/computer.png", alt="")
     section.company 
       .container 
         .box-sponsors
           .box-sponsors__item
             h2.title.box-sponsors__title Интеграция с 50+ службами доставки
-            .spnsors
+            .sponsors
               .sponsors__item 
-                +icon('logos', 'icon-logos')
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
           .box-sponsors__item
             h2.title.box-sponsors__title 40+ платёжных систем и сервисов уже доступны для работы
-            .spnsors
+            .sponsors
               .sponsors__item 
-                +icon('logos', 'icon-logos')
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
+              .sponsors__item 
+                +icon('first', 'icon-sponsors', '167', '64')
     section.dark.dark--white
       .container 
         h2.title.dark__title За вами будет закреплён персональный менеджер
@@ -163,3 +354,15 @@ block mainContent
           li.dark-list__item 
             .box-number 04.
             p Вы никогда не останетесь один на один с платформой, вам всегда помогут
+    section.lead 
+      .container 
+        h2.title.lead__title Остались дополнительные вопросы?
+        p.lead__text Наш менеджер свяжется с вами и проконсультирует по возможностям платформы
+        p.lead__subtext + поможем подобрать решение для вашего бизнеса
+        form.form-main.form-main--lead(action="")
+          .form-main__inputs
+            .form-main__row 
+              input(type="text" name="client" placeholder="Имя")
+            .form-main__row 
+              input(type="tel" name="phone" placeholder="+7 (___) ___-__-__") 
+            button.button.form-main__btn(type="submit") Получить консультацию

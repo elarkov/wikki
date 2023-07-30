@@ -1,0 +1,51 @@
+.company {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #F4F5F6;
+  @include xl-block {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+
+.box-sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  &__title {
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-align: center;
+    @include md-block {
+      max-width: 760px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    @include xl-block {
+      margin-bottom: 50px;
+      font-size: 40px;
+    }
+  }
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  @include sm-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    
+    text-align: center;
+    @include sm-block {
+      @include size(4);
+    }
+    @include xl-block {
+      width: 167px;
+    }
+  }
+}

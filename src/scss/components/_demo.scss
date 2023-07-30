@@ -1,0 +1,112 @@
+.demo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include md-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    @include md-block {
+      text-align: center;
+      font-size: 40px;
+    }
+    @include xl-block {
+      font-size: 48px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    color: #777E90;
+    @include md-block {
+      width: 635px;
+      margin: auto;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @include md-block {
+        flex-direction: row;
+        align-items: center;
+      }
+      @include md-block {
+        gap: 120px;
+      }
+    }
+  }
+  &-text {
+    @include md-block {
+      width: 425px;
+    }
+    h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+    }
+    &__info {
+      margin-bottom: 20px;
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: #777E90;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          list-style: disc;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          color: #777E90;
+        }
+      }
+    }
+    .box-number {
+      &:after {
+        width: 255px;
+      }
+    }
+  }
+  &-pic {
+    width: 330px;
+    height: 230px;
+    margin: auto;
+    @include md-block {
+      width: 540px;
+      height: 380px;
+      margin: 0;
+    }
+    &--flex {
+      @include md-block {
+        order: 1;
+      }
+    }
+  }
+  &-btn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    color: #FFC83A;
+  }
+}
