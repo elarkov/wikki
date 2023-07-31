@@ -144,7 +144,7 @@
     padding-bottom: 40px;
   }
   @include xl-block {
-    padding-bottom: 160px;
+    padding-bottom: 145px;
   }
 }
 
@@ -156,6 +156,7 @@
   margin-bottom: 50px;
   @include md-block {
     margin-bottom: 30px;
+    padding-top: 30px;
   }
 }
 .logo {
@@ -253,6 +254,7 @@
     @include xl-block {
       font-size: 54px; 
       margin-bottom: 30px;
+      line-height: 120%;
     }
     span {
       color: #FFD25E;
@@ -265,6 +267,7 @@
     line-height: 150%;
     color: #E6E8EC;
     @include xl-block {
+      margin-bottom: 37px;
       max-width: 665px;
       font-size: 20px; 
     }
@@ -281,7 +284,7 @@
     padding: 17px 32px;
     @include md-block {
       width: 350px;
-      padding: 20px 40px;
+      padding: 17px 40px;
       font-size: 22px;
     }
   }

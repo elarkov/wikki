@@ -4,7 +4,7 @@
   background: #23262F;
   @include xl-block {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
   }
   &__title {
     color: #FCFCFD;
@@ -13,6 +13,9 @@
       font-size: 40px; 
       max-width: 730px;
       margin-bottom: 20px;
+    }
+    @include xl-block {
+      line-height: 117%;
     }
     span {
       color: #FFD25E;
@@ -64,6 +67,10 @@
       margin-bottom: 40px;
       @include md-block {
         margin-bottom: 80px;
+      }
+      @include xl-block {
+        font-size: 48px;
+        margin-bottom: 84px;
       }
     }
     .box-number {

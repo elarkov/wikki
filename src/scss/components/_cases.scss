@@ -24,6 +24,7 @@
       }
       @include xl-block {
         width: 255px;
+        row-gap: 30px;
       }
     }
     &__img {

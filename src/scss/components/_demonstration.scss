@@ -12,6 +12,7 @@
     @include xl-block {
       margin-bottom: 40px;
       font-size: 48px;
+      line-height: 120%;
     }
   }
   &-list {
@@ -20,6 +21,10 @@
     flex-direction: column;
     gap: 8px;
     margin-bottom: 30px;
+    @include xl-block {
+      gap: 12px;
+      margin-bottom: 40px;
+    }
     li {
       list-style: disc;
       font-size: 16px;
@@ -41,6 +46,12 @@
       width: 100%;
       max-width: 730px;
     }
+    .form-main {
+      @include xl-block {
+        gap: 20px;
+        width: 450px;
+      }
+    }
   }
   &-decore {
     position: relative;
@@ -56,8 +67,11 @@
       z-index: 0;
     }
     @include xl-block {
-      width: 560px;
-      height: 592px;
+      // width: 560px;
+      // height: 592px;
+      width: 760px;
+    height: 748px;
+    right: -298px;
     }
     img {
       position: absolute;

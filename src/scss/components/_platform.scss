@@ -1,6 +1,9 @@
 .platform {
   padding-top: 40px;
   padding-bottom: 50px;
+  @include xl-block {
+    padding-bottom: 100px;
+  }
   &__title {
     margin-bottom: 40px;
     @include sm-block {
@@ -8,6 +11,10 @@
     }
     @include md-block {
       font-size: 40px; 
+    }
+    @include xl-block {
+      line-height: 132%;
+      margin-bottom: 53px;
     }
   }
   &-list {
@@ -31,6 +38,9 @@
       border-radius: 20px;
       @include sm-block {
         @include size(6);
+      }
+      @include xl-block {
+        min-height: 260px;
       }
       p {
         font-size: 20px;

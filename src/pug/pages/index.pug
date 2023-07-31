@@ -25,7 +25,7 @@ block mainContent
             .cases-list__img 
               +icon('medal','icon-list', '48', '48')
             .cases-list__text Будь первым в своём городе
-    section.office 
+    section.office(id="personal")
       .container 
         h2.title.office__title Расширенный личный кабинет покупателя
         p.office__subtitle Вся информация о заказах в одном месте
@@ -57,7 +57,7 @@ block mainContent
                 p Можно открыть заказ и увидеть детали заказа, товары, потолки с чертежами, увеличить картинки, и даже оплатить заказ в любом статусе
                 p Оплата подгружается автоматически в 1С и привязывается к заказу без участия менеджера
                 p История платежей. Все оплаты, включая оплаченные в офисе, переводы на карту, наличные и т.д с распределением платежа на несколько заказов видно в личном кабинете дилера
-    section.office.office--items 
+    section.office.office--items(id="crm") 
       .container 
         h2.title.office__title.office__title--2 Расширенная 2-х сторонняя интеграция с 1С
         p.office__subtitle Посекундный IP обмен с 1С
@@ -97,6 +97,18 @@ block mainContent
                 p <b>Видит сумму заказа, какие заказы оплачены а какие нет, общую задолженности или переплату</b>
                 p <b>Общее кол-во баллов и историю начисления и списания баллов по заказам</b>
                 p <b>Написать комментарий, менять адрес монтажа в любом статусе заказа</b>
+        .lead-form 
+          .lead-info 
+            .lead-top
+              h2.title.lead-info__title Получите бесплатную демо-версию вашего интернет-магазина уже через 1 день
+              p Оставьте заявку, и мы скинем вам доступ к демо-версии
+            form.form-main(action="")
+              .form-main__inputs
+                .form-main__row 
+                  input(type="text" name="client" placeholder="Имя")
+                .form-main__row 
+                  input(type="tel" name="phone" placeholder="+7 (___) ___-__-__" data-tel-input) 
+              button.button.form-main__btn(type="submit") Получить бесплатную демо-версию
     section.platform 
       .container 
         h2.title.platform__title Собственная платформа + мобильное приложение увеличит объём продаж в 2 раза
@@ -117,7 +129,7 @@ block mainContent
             .platform-img 
               +icon('like', 'icon-globe', '54', '54') 
             p Повысьте лояльность клиентов и улучшите сервис за счёт современного интернет-магазина
-    section.programma 
+    section.programma(id="programm") 
       .container 
         .programma-head 
           h2.title.programma-head__title Собственная программа лояльности с помощью встроенной системы <span>Бонусных баллов</span>
@@ -135,6 +147,20 @@ block mainContent
             li.programm-list__item Поощряйте частых покупателей на основе истории их покупок
             li.programm-list__item.yellow Неограниченное количество уровней групп
             li.programm-list__item Индивидуальные бонусные баллы для каждого уровня группы
+    section.lead-client
+      .container 
+        .lead-form.lead-form--white
+          .lead-info 
+            .lead-top
+              h2.title.lead-info__title Получите бесплатную демо-версию вашего интернет-магазина уже через 1 день
+              p Оставьте заявку, и мы скинем вам доступ к демо-версии
+            form.form-main(action="")
+              .form-main__inputs
+                .form-main__row 
+                  input(type="text" name="client" placeholder="Имя")
+                .form-main__row 
+                  input(type="tel" name="phone" placeholder="+7 (___) ___-__-__" data-tel-input) 
+              button.button.form-main__btn(type="submit") Получить бесплатную демо-версию
 
 
     section.dark 
@@ -154,7 +180,7 @@ block mainContent
           li.dark-list__item 
             .box-number 04.
             p Исключите ошибки менеджеров при оформлении заказа
-    section.programm-second 
+    section.programm-second(id="seo") 
       .container 
         .category Маркетинг и SEO
         h2.title.programm-second__title 10+ функций для привлечения и удержания пользователей
@@ -244,7 +270,19 @@ block mainContent
               a.demo-btn(href="#")
                 p Получить доступ к демо-версии
                 +icon('arrow', 'icon-arrow', '24', '24')
-    section.panel 
+        .lead-form.lead-form--white 
+          .lead-info 
+            .lead-top
+              h2.title.lead-info__title Получите бесплатную демо-версию вашего интернет-магазина уже через 1 день
+              p Оставьте заявку, и мы скинем вам доступ к демо-версии
+            form.form-main(action="")
+              .form-main__inputs
+                .form-main__row 
+                  input(type="text" name="client" placeholder="Имя")
+                .form-main__row 
+                  input(type="tel" name="phone" placeholder="+7 (___) ___-__-__" data-tel-input) 
+              button.button.form-main__btn(type="submit") Получить бесплатную демо-версию
+    section.panel(id="panel") 
       .container 
         .panel-info 
           h2.title.panel-info__title Админ панель для руководителя и менеджера. Контролируйте бизнес со смартфона из любой точки мира
@@ -299,13 +337,13 @@ block mainContent
               .form-main__row 
                 input(type="text" name="client" placeholder="Имя")
               .form-main__row 
-                input(type="tel" name="phone" placeholder="+7 (___) ___-__-__") 
+                input(type="tel" name="phone" placeholder="+7 (___) ___-__-__" data-tel-input) 
             button.button.form-main__btn(type="submit") Записаться на Zoom демонстрацию
       .demonstration-decore
         picture 
           source(srcset="img/computer-sm.png" media="(max-width: 768px)" width="360" height="330")
           img(src="img/computer.png", alt="")
-    section.company 
+    section.company(id="integration") 
       .container 
         .box-sponsors
           .box-sponsors__item
@@ -364,5 +402,5 @@ block mainContent
             .form-main__row 
               input(type="text" name="client" placeholder="Имя")
             .form-main__row 
-              input(type="tel" name="phone" placeholder="+7 (___) ___-__-__") 
+              input(type="tel" name="phone" placeholder="+7 (___) ___-__-__" data-tel-input) 
             button.button.form-main__btn(type="submit") Получить консультацию

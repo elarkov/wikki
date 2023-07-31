@@ -34,29 +34,31 @@ mixin header()
           p.header-contacts__text Работаем с 9 до 22 без выходных
           a.phone.header-contacts__phone(href="tel:+7 495 845-17-49") +7 495 845-17-49
       nav.main-navigation 
-        .container 
-          .nav-top 
-            ul 
-              li 
-                a(href="#") Главная
-              li 
-                a(href="#") Личный кабинет
-              li 
-                a(href="#") Интеграция с 1С
-              li 
-                a(href="#") Программа лояльности
-              li 
-                a(href="#") Маркетинг и SEO
-              li 
-                a(href="#") Админ панель
-              li 
-                a(href="#") Интеграции
+        .nav-top 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              a(href="#personal") Личный кабинет
+            li 
+              a(href="#crm") Интеграция с 1С
+            li 
+              a(href="#programm") Программа лояльности
+            li 
+              a(href="#seo") Маркетинг и SEO
+            li 
+              a(href="#panel") Админ панель
+            li 
+              a(href="#integration") Интеграции
       .header-hero 
         h1.header-hero__title <span>Wikki</span> - мобильное приложение + готовый интернет магазин за 10 дней
         p.header-hero__text С расширенным личным кабинетом и 2-ух сторонней интеграцией с 1С. Для рынка натяжных потолков
         .header-action 
           a.button.header-action__btn(href="#") Попробовать бесплатно
           a.circle-btn(href="#")
-            img(src="img/circle-button.png", alt="" width="60" height="60") 
+            picture  
+              source(srcset="img/circle-button.png" media="(max-width: 768px)" width="60" height="60")
+              img(src="img/circle-button-xl.png", alt="" width="70" height="70")
+            
         .header-pic 
           img(src="img/apple-mac.png", alt="" width="330" height="300")

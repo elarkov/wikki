@@ -4,7 +4,7 @@
   background: #F4F5F6;
   @include xl-block {
     padding-top: 100px;
-    padding-bottom: 120px;
+    padding-bottom: 106px;
   }
 }
 
@@ -12,6 +12,9 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  @include xl-block {
+    gap: 80px;
+  }
   &__title {
     margin-bottom: 30px;
     font-size: 32px;
@@ -24,6 +27,7 @@
     @include xl-block {
       margin-bottom: 50px;
       font-size: 40px;
+      line-height: 136%;
     }
   }
 }
