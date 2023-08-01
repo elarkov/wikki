@@ -394,6 +394,23 @@ block mainContent
             p Вы никогда не останетесь один на один с платформой, вам всегда помогут
     section.lead 
       .container 
+        .app-box 
+          .app-img 
+            picture 
+              source(srcset="img/app-sm.png" media="(max-width: 768px)" width="330" height="670")
+              img(src="img/app-xl.png", alt="" width="1110" height="670")
+          .app-info
+            h2.title.app__title Скачайте демо-версию мобильного приложения
+            .apps 
+              a(href="#")
+                picture 
+                  source(srcset="img/button-apple-sm.png" media="(max-width: 768px)" width="190" height="54")
+                  img(src="img/btn-apple.png", alt="" width="151" height="54") 
+              a(href="#") 
+                picture 
+                  source(srcset="img/button-google-sm.png" media="(max-width: 768px)" width="190" height="54")
+                  img(src="img/btn-google.png", alt="" width="167" height="54")
+            a.app-demo(href="#" target="_blank") Демо-версия сайта
         h2.title.lead__title Остались дополнительные вопросы?
         p.lead__text Наш менеджер свяжется с вами и проконсультирует по возможностям платформы
         p.lead__subtext + поможем подобрать решение для вашего бизнеса

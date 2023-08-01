@@ -22,6 +22,10 @@ body {
 
 .container {
   @include wrapper();
+  max-width: 360px;
+  @include sm-block {
+    max-width: 1140px;
+  }
 }
 
 /**

@@ -76,21 +76,24 @@
     }
   }
   &-pic {
+    display: block;
     width: 330px;
     height: 350px;
     margin: auto;
+    margin-bottom: 40px;
     @include sm-block {
       order: 1;
     }
     @include md-block {
       width: 445px;
       height: 525px;
+      margin-bottom: 0;
     }
     @include xl-block {
       position: absolute;
       right: 0;
       top: 50%;
-       transform: translate(0, -50%);
+      transform: translate(0, -50%);
     }
   }
 }
