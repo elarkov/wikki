@@ -1,0 +1,22 @@
+mixin header-success()
+  //--HEADER
+  header.header-main.header-main--success
+    .container 
+      .header-top 
+        .logo 
+          .logo__img 
+            picture 
+              source(srcset="img/logo.png" media="(min-width: 576px)")
+              img(src="img/logo-lg.png", alt="")
+          p.logo__text Современный интернет-магазин без привлечения разработчиков
+        .header-contacts 
+          p.header-contacts__text Работаем с 9 до 20 без выходных
+          a.phone.header-contacts__phone(href="tel:+79058140676") +7 905 814-06-76
+      .header-hero 
+        h1.header-hero__title Спасибо! Мы получили заявку
+        p.header-hero__text Мы свяжемся с вами в ближайшее время. Время работы нашего офиса — ежедневно,с 9:30 до 21:00 по Москве
+            
+        .header-pic 
+          picture 
+            source(srcset="img/success.png" media="(max-width: 1024px)" width="292" height="292")
+            img(src="img/success-lg.png", alt="" width="450" height="440")

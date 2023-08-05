@@ -132,7 +132,6 @@
 
 /*HEADER*/
 .header-main {
-  
   background-image: url('../img/bg-header-sm.jpg');
   background-size: cover;
   background-position: top center;
@@ -145,6 +144,65 @@
   }
   @include xl-block {
     padding-bottom: 145px;
+  }
+  &--success {
+    @media only screen and (min-width: 576px) {
+      background-image: url('../img/bg-success.jpg');
+    }
+    @include sm-block {
+      padding-bottom: 0;
+    }
+    @include xl-block {
+      padding-bottom: 0;
+    }
+    .container {
+      position: relative;
+      @include sm-block {
+        padding-bottom: 80px
+      }
+      @include xl-block {
+        padding-bottom: 193px;
+      }
+    }
+    .header-top {
+      @include xl-block {
+        margin-bottom: 170px;
+      }
+    }
+    .header-hero {
+      @include xl-block {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .header-hero__text {
+      @include sm-block {
+        margin-bottom: 0;
+      }
+      @include xl-block {
+        width: 425px;
+        margin-bottom: 0;
+      }
+    }
+    .header-pic {
+      @include sm-block {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+      }
+      @include xl-block {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: -180px;
+      }
+      picture {
+        img {
+          margin: auto;
+        }
+      }
+    }
   }
 }
 

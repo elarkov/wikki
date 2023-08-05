@@ -32,7 +32,7 @@ export function ajaxSend() {
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
           // Переходим на другую страницу после успешной отправки данных
-          window.location.href = 'success.html';
+          window.location.href = '/success';
         }
       };
 
