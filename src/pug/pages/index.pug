@@ -139,14 +139,20 @@ block mainContent
             source(srcset="img/man-2-sm.png" media="(max-width: 768px)" width="330" height="370")
             img(src="img/man-2-xl.png", alt="" width="445" height="700")
           ul.programm-list 
-            li.programm-list__item.yellow Создайте группу VIP-клиентов с потрясающими привилегиями
-            ul 
+            li.programm-list__item.yellow.active(data-accordion-btn) Создайте группу VIP-клиентов с потрясающими привилегиями
+            ul.programm-list__inner.active(data-accordion) 
               li Бесплатная доставка
               li Товары, доступные VIP-клиентам
               li Цены на товары для этой группы могут быть ниже
-            li.programm-list__item Поощряйте частых покупателей на основе истории их покупок
-            li.programm-list__item.yellow Неограниченное количество уровней групп
-            li.programm-list__item Индивидуальные бонусные баллы для каждого уровня группы
+            li.programm-list__item(data-accordion-btn) Поощряйте частых покупателей на основе истории их покупок
+            ul.programm-list__inner(data-accordion) 
+              li Полная информация и история начисления баллов всегда доступна в личном кабинете покупателя
+            li.programm-list__item.yellow(data-accordion-btn) Неограниченное количество уровней групп
+            ul.programm-list__inner(data-accordion) 
+              li Каждый уровень настраивается индивидуально, и могут иметь минимальную проходную сумму, виды бонусов и вознаграждений.
+            li.programm-list__item(data-accordion-btn) Индивидуальные бонусные баллы для каждого уровня группы
+            ul.programm-list__inner(data-accordion) 
+              li Выбирайте в качестве бонусов премиальные баллы, скидки или бесплатную доставку
     section.lead-client
       .container 
         .lead-form.lead-form--white
@@ -186,18 +192,36 @@ block mainContent
         h2.title.programm-second__title 10+ функций для привлечения и удержания пользователей
         .programm-wrapper 
           ul.programm-list.programm-list--second 
-            li.programm-list__item.yellow Новостные рассылки и уведомления
-            ul 
+            li.programm-list__item.yellow.active(data-accordion-btn) Новостные рассылки и уведомления
+            ul.active(data-accordion) 
               li Встроенная возможность уведомлений через email, СМС, push, telegram bot и личный кабинет
-            li.programm-list__item Промо-акции с 17 видами условий
-            li.programm-list__item.yellow 5 видов бонусов в качестве поощрения
-            li.programm-list__item Виджеты. Встройте свой магазин куда угодно
-            li.programm-list__item.yellow Баннеры для привлечения внимания
-            li.programm-list__item Кросс-продажи, апселл
-            li.programm-list__item.yellow SEO-инструменты
-            li.programm-list__item Встроенный блог
-            li.programm-list__item.yellow Чат для обратной связи с покупателями
-            li.programm-list__item Оформления заказа в 2 клика
+            li.programm-list__item(data-accordion-btn) Промо-акции с 17 видами условий
+            ul(data-accordion)
+              li Скидки, подарки, присвоение привилегий, бесплатная доставка, подарочный сертификат или купон
+            li.programm-list__item.yellow(data-accordion-btn) 5 видов бонусов в качестве поощрения
+            ul(data-accordion)
+              li Скидки, подарки, присвоение привилегий, бесплатная доставка, подарочный сертификат или купон
+            li.programm-list__item(data-accordion-btn) Виджеты. Встройте свой магазин куда угодно
+            ul(data-accordion)
+              li Задайте уникальный дизайн, состав блоков и даже набор товаров
+            li.programm-list__item.yellow(data-accordion-btn) Баннеры для привлечения внимания
+            ul(data-accordion)
+              li Создайте и расположите в видимой части экрана привлекательный баннер
+            li.programm-list__item(data-accordion-btn) Кросс-продажи, апселл
+            ul(data-accordion)
+              li Показывайте дополняющие и рекомендуемые товары на любой странице вашего магазина
+            li.programm-list__item.yellow(data-accordion-btn) SEO-инструменты
+            ul(data-accordion)
+              li Первые места в результатах поиска благодаря SEO-оптимизированным URL, мета-описаниям, поисковым сниппетам, каноническим URL и 301 редиректам. На каждой странице есть поля для мета-тегов, в которые вы можете вводить SEO-заголовки, описания и ключевые слов
+            li.programm-list__item(data-accordion-btn) Встроенный блог
+            ul(data-accordion)
+              li В блоге вы можете публиковать новости, специальные предложения, объявления и SEO-статьи для повышения позиций в поиске
+            li.programm-list__item.yellow(data-accordion-btn) Чат для обратной связи с покупателями
+            ul(data-accordion)
+              li Благодаря гибкому конструктору акций комбинируйте условия между собой
+            li.programm-list__item(data-accordion-btn) Оформления заказа в 2 клика
+            ul(data-accordion)
+              li Возможность самостоятельно в два клика оформить заказ, списать накопленные баллы частично или полностью и оплатить не дожидаться очереди, или вечером не спеша, ведь это доступно 24/7
           .prog-pic 
             picture
               source(srcset="img/banner-1-sm.png" media="(max-width: 768px)" width="330" height="440")
@@ -295,32 +319,38 @@ block mainContent
             li 
               +icon('line', 'icon-line', '24', '24')
               div 
-                h3.title Аналитика на главной странице
-                p Последние заказы, статус заказов, этапы в воронке, последние события, текущий баланс
+                h3.title.active(data-accordion-btn) Аналитика на главной странице
+                p.active(data-accordion) Последние заказы, статус заказов, этапы в воронке, последние события, текущий баланс
             li 
               +icon('line', 'icon-line', '24', '24')
               div 
-                h3.title Детальная статистика продаж
+                h3.title(data-accordion-btn) Детальная статистика продаж
+                p(data-accordion) Какие товары пользуются большим и меньшим спросом, сколько людей посетили ваш онлайн-магазин и сколько совершили покупок
             li 
               +icon('line', 'icon-line', '24', '24')
               div 
-                h3.title Полная информация о каждом Заказе
+                h3.title(data-accordion-btn) Полная информация о каждом Заказе
+                p(data-accordion) Отслеживайте количество заказов, статус, сумму и т.д
             li 
               +icon('line', 'icon-line', '24', '24')
               div 
-                h3.title Просмотр, добавление и редактирование товаров и категорий
+                h3.title(data-accordion-btn) Просмотр, добавление и редактирование товаров и категорий
+                p(data-accordion) Гибкий и полностью настраиваемый импорт/экспорт товаров и заказов
             li 
               +icon('line', 'icon-line', '24', '24')
               div 
-                h3.title Комментарии и отзывы покупателей
+                h3.title(data-accordion-btn) Комментарии и отзывы покупателей
+                p(data-accordion) О товарах, категориях, заказах и т.д
             li 
               +icon('line', 'icon-line', '24', '24')
               div 
-                h3.title Публикуйте страницы, опросы
+                h3.title(data-accordion-btn) Публикуйте страницы, опросы
+                p(data-accordion) Голосования, формы и ссылки
             li 
               +icon('line', 'icon-line', '24', '24')
               div 
-                h3.title Сделайте Маркетплейс из своего магазина
+                h3.title(data-accordion-btn) Сделайте Маркетплейс из своего магазина
+                p(data-accordion) Добавляйте и сортируйте список продавцов зарегистрированных в магазине
     section.demonstration 
       .container 
         .demonstration-info

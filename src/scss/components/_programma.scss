@@ -111,7 +111,17 @@
       }
     }
     + ul {
+      max-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
       padding-left: 20px;
+      &.active {
+        max-height: 148px;
+        visibility: visible;
+      }
         li {
           list-style: disc;
           font-size: 16px;
@@ -128,6 +138,10 @@
   &:before {
     background: #FFC83A;
   }
+}
+
+.programm-list__inner {
+  
 }
 
 .programm-second {

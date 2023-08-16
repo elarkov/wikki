@@ -63,17 +63,26 @@
       font-weight: 600;
       line-height: 150%;
       color: #FCFCFD;
-    }
-    p {
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; 
-      color: #B1B5C3;
-      @include md-block {
-        max-width: 340px;
+      + p {
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: 0.5s ease-in-out;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        color: #B1B5C3;
+        @include md-block {
+          max-width: 340px;
+        }
+        &.active {
+          max-height: 148px;
+          visibility: visible;
+        }
       }
     }
+    
   }
   &-pic {
     display: block;
